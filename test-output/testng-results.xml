@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My Garage" duration-ms="414232" started-at="2017-03-09T05:57:01Z" finished-at="2017-03-09T06:03:55Z">
+    <groups>
+    </groups>
+    <test name="Login" duration-ms="111033" started-at="2017-03-09T05:57:01Z" finished-at="2017-03-09T05:58:52Z">
+      <class name="testCases.SignInTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:testCases.SignInTest@77caeb3e]" name="init" is-config="true" duration-ms="8073" started-at="2017-03-09T10:57:01Z" finished-at="2017-03-09T10:57:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="signIn()[pri:0, instance:testCases.SignInTest@77caeb3e]" name="signIn" duration-ms="102944" started-at="2017-03-09T10:57:09Z" finished-at="2017-03-09T10:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+      </class> <!-- testCases.SignInTest -->
+    </test> <!-- Login -->
+    <test name="Add Ride" duration-ms="303164" started-at="2017-03-09T05:58:52Z" finished-at="2017-03-09T06:03:55Z">
+      <class name="testCases.MyGarageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:testCases.MyGarageTest@754ba872]" name="init" is-config="true" duration-ms="12" started-at="2017-03-09T10:58:52Z" finished-at="2017-03-09T10:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="myGarageTest()[pri:0, instance:testCases.MyGarageTest@754ba872]" name="myGarageTest" duration-ms="302660" started-at="2017-03-09T10:58:52Z" finished-at="2017-03-09T11:03:54Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: com.pakwheels:id/img_cancel_how_it_works (tried for 300 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'DESKTOP-N6KK6O3', ip: '192.168.100.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Softwares\Automation\PakWheelsApp\APKs\Ppakwheels51.apk, networkConnectionEnabled=true, warnings={}, app-package=com.pakwheels, app-activity=com.pakwheels.activities.others.SplashScreenActivity, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, desired={app=E:\Softwares\Automation\PakWheelsApp\APKs\Ppakwheels51.apk, platformVersion=4.3, app-package=com.pakwheels, app-activity=com.pakwheels.activities.others.SplashScreenActivity, platformName=Android, deviceName=emulator-5554}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 18c14531-18a0-4bb8-a117-fccec142fa49]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.pakwheels:id/img_cancel_how_it_works (tried for 300 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'DESKTOP-N6KK6O3', ip: '192.168.100.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Softwares\Automation\PakWheelsApp\APKs\Ppakwheels51.apk, networkConnectionEnabled=true, warnings={}, app-package=com.pakwheels, app-activity=com.pakwheels.activities.others.SplashScreenActivity, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, desired={app=E:\Softwares\Automation\PakWheelsApp\APKs\Ppakwheels51.apk, platformVersion=4.3, app-package=com.pakwheels, app-activity=com.pakwheels.activities.others.SplashScreenActivity, platformName=Android, deviceName=emulator-5554}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 18c14531-18a0-4bb8-a117-fccec142fa49
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at testCases.MyGarageTest.myGarageTest(MyGarageTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.52 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0-beta3', revision: 'c7b525d', time: '2016-09-01 14:57:03 -0700'
+System info: host: 'DESKTOP-N6KK6O3', ip: '192.168.100.141', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=E:\Softwares\Automation\PakWheelsApp\APKs\Ppakwheels51.apk, networkConnectionEnabled=true, warnings={}, app-package=com.pakwheels, app-activity=com.pakwheels.activities.others.SplashScreenActivity, databaseEnabled=false, deviceName=emulator-5554, platform=LINUX, desired={app=E:\Softwares\Automation\PakWheelsApp\APKs\Ppakwheels51.apk, platformVersion=4.3, app-package=com.pakwheels, app-activity=com.pakwheels.activities.others.SplashScreenActivity, platformName=Android, deviceName=emulator-5554}, platformVersion=4.4.2, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 18c14531-18a0-4bb8-a117-fccec142fa49
+*** Element info: {Using=id, value=com.pakwheels:id/img_cancel_how_it_works}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:631)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:418)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myGarageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.MyGarageTest@754ba872]" name="tearDown" is-config="true" duration-ms="485" started-at="2017-03-09T11:03:54Z" finished-at="2017-03-09T11:03:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="tearDown(io.appium.java_client.android.AndroidDriver)[pri:0, instance:testCases.MyGarageTest@754ba872]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-03-09T11:03:55Z" finished-at="2017-03-09T11:03:55Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a AfterSuite annotated tearDown.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a AfterSuite annotated tearDown.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:244)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:172)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:458)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.MyGarageTest -->
+    </test> <!-- Add Ride -->
+  </suite> <!-- My Garage -->
+</testng-results>

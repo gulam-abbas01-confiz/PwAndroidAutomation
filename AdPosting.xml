@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Ad Posting" verbose="1">
+	<test name="Car Ad Posting">
+		<classes>
+			<class name="testCases.CarAdPostTest">
+			<methods>
+				<exclude name="testCases.BikeAdPostTest" />
+				<exclude name="testCases.PartAdPostTest" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- <test name="Bike Ad Posting">
+		<classes>
+			<class name="testCases.BikeAdPostTest">
+			<methods>
+				<exclude name="testCases.BikeAdPostTest" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Accessory Ad Posting">
+		<classes>
+			<class name="testCases.PartAdPostTest" />
+		</classes>
+	</test> -->
+</suite>

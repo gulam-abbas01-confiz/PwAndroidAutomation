@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Car Finance]">
+  <test name="Car Finance Logged in(failed)">
+    <classes>
+      <class name="testCases.SignInTest">
+        <methods>
+          <include name="init"/>
+          <include name="signIn"/>
+        </methods>
+      </class> <!-- testCases.SignInTest -->
+      <class name="testCases.CarFinanceTest">
+        <methods>
+          <include name="requestCarFinanceLoggedIn"/>
+          <include name="init"/>
+          <include name="init2"/>
+        </methods>
+      </class> <!-- testCases.CarFinanceTest -->
+    </classes>
+  </test> <!-- Car Finance Logged in(failed) -->
+</suite> <!-- Failed suite [Car Finance] -->

@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Car Finance" verbose="1">
+	<!-- <test name="Car Finance Non Logged In"> <classes> <class name="testCases.CarFinanceTest"> 
+		<methods> <exclude name="requestCarFinanceLoggedIn" /> <exclude name="init2" 
+		/> </methods> </class> </classes> </test> -->
+	<test name="Car Finance Logged in">
+		<classes>
+			<class name="testCases.SignInTest">
+			</class>
+			<class name="testCases.CarFinanceTest">
+				<methods>
+					<exclude name="requestCarFinanceNonLogin" />
+					<exclude name="init" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
